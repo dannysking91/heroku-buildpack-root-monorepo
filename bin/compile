@@ -4,4 +4,5 @@ BUILD_DIR=$1
 
 mkdir "$BUILD_DIR/web/"
 cp -rf "$BUILD_DIR/" "$BUILD_DIR/web/"
+ls -la "$BUILD_DIR/"
 ls -la "$BUILD_DIR/web/"
