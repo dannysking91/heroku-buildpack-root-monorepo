@@ -4,6 +4,11 @@ BUILD_DIR=$1
 
 STAGE="$(mktemp -d)"
 
+pwd
+cd "$BUILD_DIR"
+pwd
+ls -la
+
 mv "${BUILD_DIR}"/* "${STAGE}"
 rm -rf "${BUILD_DIR}"/*
 mkdir "$BUILD_DIR/web/"
