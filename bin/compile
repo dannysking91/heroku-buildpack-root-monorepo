@@ -12,7 +12,7 @@ ls -la
 mv "${BUILD_DIR}"/* "${STAGE}"
 rm -rf "${BUILD_DIR}"/*
 mkdir "$BUILD_DIR/web/"
-mv "${STAGE}" "${BUILD_DIR}/web/"
+mv "${STAGE}"/* "${BUILD_DIR}/web/"
 mv "/tmp/js-packages" "${BUILD_DIR}/js-packages/"
 pwd
 cd "$BUILD_DIR"
