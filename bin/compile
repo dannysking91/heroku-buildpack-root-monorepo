@@ -4,23 +4,13 @@ BUILD_DIR=$1
 
 STAGE="$(mktemp -d)"
 
-pwd
-cd "$BUILD_DIR"
-pwd
-ls -la
+rm -rf "${BUILD_DIR}"/node_modules/electron/
+rm -rf "${BUILD_DIR}"/node_modules/@storybook/
+rm -rf "${BUILD_DIR}"/node_modules/canvas/
+rm -rf "${BUILD_DIR}"/node_modules/aws-sdk/
 
 mv "${BUILD_DIR}"/* "${STAGE}"
 rm -rf "${BUILD_DIR}"/*
 mkdir "$BUILD_DIR/web/"
 mv "${STAGE}"/* "${BUILD_DIR}/web/"
 mv "/tmp/js-packages" "${BUILD_DIR}/js-packages/"
-pwd
-cd "$BUILD_DIR"
-pwd
-ls -la
-cd web
-ls -la
-cd modules
-ls -la
-cd inc.joinroot.com
-ls -la
