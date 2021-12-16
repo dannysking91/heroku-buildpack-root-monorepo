@@ -10,3 +10,9 @@ mkdir "$BUILD_DIR/web/"
 mv "${STAGE}" "${BUILD_DIR}/web/"
 mv "/tmp/js-packages" "${BUILD_DIR}/js-packages/"
 ls -la
+cd web
+ls -la
+cd modules
+ls -la
+cd inc.joinroot.com
+ls -la
