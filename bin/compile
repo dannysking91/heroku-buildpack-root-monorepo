@@ -4,20 +4,20 @@ BUILD_DIR=$1
 
 STAGE="$(mktemp -d)"
 
-rm -rf "${BUILD_DIR}"/node_modules/electron/
-rm -rf "${BUILD_DIR}"/node_modules/@storybook/
-rm -rf "${BUILD_DIR}"/node_modules/canvas/
-rm -rf "${BUILD_DIR}"/node_modules/aws-sdk/
-rm -rf "${BUILD_DIR}"/node_modules/prettier/
-rm -rf "${BUILD_DIR}"/node_modules/@jest*
-rm -rf "${BUILD_DIR}"/node_modules/jest-jasmine2/
-rm -rf "${BUILD_DIR}"/node_modules/@testing-library/
-rm -rf "${BUILD_DIR}"/node_modules/@typescript-eslint/
-rm -rf "${BUILD_DIR}"/node_modules/eslint*
-rm -rf "${BUILD_DIR}"/node_modules/react-syntax-highlighter/
-rm -rf "${BUILD_DIR}"/node_modules/cypress/
-rm -rf "${BUILD_DIR}"/node_modules/@okta/
-rm -rf "${BUILD_DIR}"/node_modules/mocha/
+# rm -rf "${BUILD_DIR}"/node_modules/electron/
+# rm -rf "${BUILD_DIR}"/node_modules/@storybook/
+# rm -rf "${BUILD_DIR}"/node_modules/canvas/
+# rm -rf "${BUILD_DIR}"/node_modules/aws-sdk/
+# rm -rf "${BUILD_DIR}"/node_modules/prettier/
+# rm -rf "${BUILD_DIR}"/node_modules/@jest*
+# rm -rf "${BUILD_DIR}"/node_modules/jest-jasmine2/
+# rm -rf "${BUILD_DIR}"/node_modules/@testing-library/
+# rm -rf "${BUILD_DIR}"/node_modules/@typescript-eslint/
+# rm -rf "${BUILD_DIR}"/node_modules/eslint*
+# rm -rf "${BUILD_DIR}"/node_modules/react-syntax-highlighter/
+# rm -rf "${BUILD_DIR}"/node_modules/cypress/
+# rm -rf "${BUILD_DIR}"/node_modules/@okta/
+# rm -rf "${BUILD_DIR}"/node_modules/mocha/
 
 mv "${BUILD_DIR}"/* "${STAGE}"
 rm -rf "${BUILD_DIR}"/*
@@ -27,3 +27,12 @@ mv "/tmp/js-packages" "${BUILD_DIR}/js-packages/"
 
 rm -rf "${BUILD_DIR}"/js-packages/integration*
 rm -rf "${BUILD_DIR}"/js-packages/test-utilities/
+rm -rf "${BUILD_DIR}"/js-packages/quoting-rules/
+rm -rf "${BUILD_DIR}"/js-packages/root-eslint-plugin/
+rm -rf "${BUILD_DIR}"/js-packages/Dockerfile/
+rm -rf "${BUILD_DIR}"/js-packages/breadcrumb-logger/
+rm -rf "${BUILD_DIR}"/js-packages/docker-compose.buildkite.yml/
+rm -rf "${BUILD_DIR}"/js-packages/locales/
+rm -rf "${BUILD_DIR}"/js-packages/root-jest-resolver/
+rm -rf "${BUILD_DIR}"/js-packages/root-js-test-bucket/
+rm -rf "${BUILD_DIR"/web/yarn.lock
