@@ -35,4 +35,4 @@ rm -rf "${BUILD_DIR}"/js-packages/docker-compose.buildkite.yml/
 rm -rf "${BUILD_DIR}"/js-packages/locales/
 rm -rf "${BUILD_DIR}"/js-packages/root-jest-resolver/
 rm -rf "${BUILD_DIR}"/js-packages/root-js-test-bucket/
-rm -rf "${BUILD_DIR"/web/yarn.lock
+rm -rf "${BUILD_DIR}"/web/yarn.lock
