@@ -14,6 +14,10 @@ rm -rf "${BUILD_DIR}"/node_modules/jest*
 rm -rf "${BUILD_DIR}"/node_modules/@testing-library/
 rm -rf "${BUILD_DIR}"/node_modules/@typescript-eslint/
 rm -rf "${BUILD_DIR}"/node_modules/eslint*
+rm -rf "${BUILD_DIR}"/node_modules/react-syntax-highlighter/
+rm -rf "${BUILD_DIR}"/node_modules/cypress/
+rm -rf "${BUILD_DIR}"/node_modules/@okta/
+rm -rf "${BUILD_DIR}"/node_modules/mocha/
 
 mv "${BUILD_DIR}"/* "${STAGE}"
 rm -rf "${BUILD_DIR}"/*
